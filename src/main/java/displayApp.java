@@ -12,7 +12,8 @@ public class displayApp {
     public void outputInDisplayTarget(){
 
     }
-    public void outputInDisplayMenu(){
-        System.out.println(menuApp);
+    public static void outputInDisplayMenu(){
+        menu menu = new menu();
+        menu.outOnDisplayMenu();
     }
 }

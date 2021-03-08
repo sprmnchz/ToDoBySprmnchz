@@ -1,6 +1,6 @@
 public class start
 {
-    public void startApp() {
-
+    public static void startApp() {
+        displayApp.outputInDisplayMenu();
     }
 }
