@@ -1,7 +1,7 @@
-package constructors;
+package Constructors;
 
-class step {
-    step(String nameStep){
+class Step {
+    Step(String nameStep){
         String nameStepTarget = nameStep;
         boolean checkFinishedStep = false;
     }
