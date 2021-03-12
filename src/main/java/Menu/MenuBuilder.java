@@ -1,20 +1,28 @@
 package Menu;
 
-import java.util.TreeMap;
+import java.util.HashMap;
 
-public class MenuBuilder {
+class MenuBuilder implements Interface.MenuBuilderInterface {
     //collection menu
-    TreeMap<Integer, String> menuAppMap = new TreeMap<Integer, String>();
+    HashMap<Integer, String> menuAppMap = new HashMap<>();
+    private int keyPointMenu;
+    private String namePointMenu;
     //method create menu
-    private void menuApp() {
+   /* private void menuApp() {
         menuAppMap.put(1, "Open ToDo list");
         menuAppMap.put(2, "Create new list");
         menuAppMap.put(3, "Change current list");
-    }
+    }*/
     //create and return menu
-    public TreeMap<Integer, String> getMenu(){
-        menuApp();
+    public HashMap<Integer, String> getMenu(){
         return menuAppMap;
+    }
+
+    public Interface.MenuBuilderInterface setMenuPoint (int keyPointMenuHashMap, String namePointMenuHashMap){
+        keyPointMenu = keyPointMenuHashMap;
+        namePointMenu = namePointMenuHashMap;
+        menuAppMap.put(keyPointMenu, namePointMenu);
+        return null;
     }
 
 }
