@@ -1,4 +1,4 @@
-package Target;
+package root.Target;
 
 public class Target {
 }

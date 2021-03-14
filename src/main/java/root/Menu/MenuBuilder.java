@@ -1,8 +1,9 @@
-package Menu;
+package root.Menu;
 
+import root.Interface.MenuBuilderInterface;
 import java.util.HashMap;
 
-class MenuBuilder implements Interface.MenuBuilderInterface {
+class MenuBuilder implements MenuBuilderInterface {
     //collection menu
     HashMap<Integer, String> menuAppMap = new HashMap<>();
     private int keyPointMenu;
@@ -18,7 +19,7 @@ class MenuBuilder implements Interface.MenuBuilderInterface {
         return menuAppMap;
     }
 
-    public Interface.MenuBuilderInterface setMenuPoint (int keyPointMenuHashMap, String namePointMenuHashMap){
+    public MenuBuilderInterface setMenuPoint (int keyPointMenuHashMap, String namePointMenuHashMap){
         keyPointMenu = keyPointMenuHashMap;
         namePointMenu = namePointMenuHashMap;
         menuAppMap.put(keyPointMenu, namePointMenu);

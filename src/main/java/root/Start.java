@@ -1,4 +1,6 @@
-import Menu.*;
+package root;
+
+import root.Menu.*;
 
 public class Start
 {
